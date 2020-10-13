@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+	<head>
+	
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		
+		<title>SmartMenu - Responsive jQuery Mega Menu</title>
+		
+		<link rel="shortcut icon" href="images/preview/favicon.ico" />
+		
+		<!-- CSS style -->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />		
+		
+		<!-- Google fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet" type="text/css">
+		
+		<!-- Font awesome -->
+		<link rel="stylesheet" type="text/css" href="css/fontawesome/css/fontawesome-all.min.css" />
+		
+		<!-- jQuery -->
+		<script type="text/javascript" src="js/jquery.js"></script>
+		
+		<!-- Preview (Remove) -->
+		<script type="text/javascript" src="js/preview.js"></script>
+		
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+		<![endif]-->
+		
+		<!-- Google Maps -->
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1gKqachikkGBsW352x5OqxJUWtD5kyOA"></script>
+		
+		<!-- SmartMenu - Responsive jQuery Mega Menu CSS settings -->
+		<link rel="stylesheet" type="text/css" href="smartmenu/smartmenu.css" />
+		<link rel="stylesheet" type="text/css" href="smartmenu/colors/aqua.css" class="skin" />
+		
+		<!-- SmartMenu - Responsive jQuery Mega Menu JS -->
+		<script type="text/javascript" src="smartmenu/jquery.smartmenu.js"></script>
+		<script>
+			var api;
+		
+			$(document).ready(function() {
+				api = $(".smartmenu").smartMenu({
+					responsive:"switch-margin"
+				});
+			});
+		</script>
+		
+	</head>
+	
+	<body>
+	
+		<!-- Header -->
+		<header>
+			<div class="header-inner wrapper clearfix">
+			
+				<!-- Logo -->
+				<div class="logo"> 
+					<img src="images/preview/logo.png" alt="" />
+				</div>		
+				
+				<h2>Demo Remotenet Mega Menu</h2>
+			
+				<!--
+				###########################################################
+					- SmartMenu - Responsive jQuery Mega Menu / Start -
+				###########################################################
+				-->
+				<ul class="smartmenu">
+					<!-- Responsive toggle -->
+					<li class="sm-responsive-toggle">
+						<span>Menu</span>
+					</li>
+					
+					<!-- Simple item -->
+					<li class="sm-active">
+						<a href="#"><i class="fas fa-home"></i>Home</a>
+					</li>
+					
+					<!-- Flyout / Start -->
+					<li>
+						<a>Flyout<i class="sm-caret fas fa-angle-down"></i></a>
+						
+						<ul data-sm-size="200">
+							
+							<li>
+								<a><i class="sm-caret fas fa-angle-right"></i>Flyout Right</a>
+								<div class="sm-custom-bg">
+							<div class="sm-row">
+								<div class="sm-col c-8">	
+								<ul data-sm-size="200">
+								
+									<li><a><i class="far fa-image"></i><i class="sm-caret fas fa-angle-right"></i>Birds</a>
+										<ul data-sm-size="200">
+											<li><a href="#">Eagles</a></li>
+											<li><a href="#">Pelicans</a></li>
+											<li><a href="#">Storks</a></li>
+										</ul>
+									</li>
+										
+									<li><a><i class="fas fa-plane"></i><i class="sm-caret fas fa-angle-right"></i>Aircraft</a>
+										<ul data-sm-size="200">
+											<li><a href="#">Planes</a></li>
+											<li><a href="#">Helicopters</a></li>
+											<li><a href="#">Air Balloon</a></li>
+											<li><a href="#">Rotorcraft</a></li>
+										</ul>
+									</li>
+									
+									<li><a><i class="far fa-star"></i><i class="sm-caret fas fa-angle-right"></i>Super Heroes</a>
+										<ul data-sm-size="200">
+											<li><a href="#">Ironman</a></li>
+											<li><a href="#">Superman</a></li>
+											<li><a href="#">Batman</a></li>
+										</ul>
+									</li>
+									
+									<li><a><i class="fas fa-paper-plane"></i><i class="sm-caret fas fa-angle-right"></i>Dirigibles</a>
+										<ul data-sm-size="200">
+											<li><a href="#">Zeppelins</a></li>
+											<li><a href="#">Blimps</a></li>
+										</ul>
+									</li>
+															
+								</ul>
+                </div>
+							   </div>
+								   </div>
+									
+							</li>
+							
+							<li>
+								<a>Flyout Left<i class="sm-caret fas fa-angle-left"></i></a>
+								
+								<ul class="sm-drop-left" data-sm-size="200">
+								
+									<li><a href="#">Washington</a></li>
+									<li><a href="#">San Francisco</a></li>	
+									<li><a href="#">New York</a></li>	
+								
+								</ul>
+							
+							</li>
+							
+							<li><a href="#">No Flyout</a></li>
+						</ul>
+						
+					</li>
+					<!-- Flyout / End -->
+					
+					<!-- Mega Menu / Start -->
+					<li class="sm-content-full sm-grid">
+						<a href="#">Mega Menu<i class="sm-caret fas fa-angle-down"></i></a>
+						
+						<div class="sm-custom-bg">
+						
+							<div class="sm-row">
+							
+								<div class="sm-col c-8">
+									<p><span class="sm-title">Standard</span></p>
+								<!--	<ul class="sm-submenu">
+										<li><a href="#">Football</a></li>
+										<li><a href="#">Basketball</a></li>
+										<li><a href="#">Baseball</a></li>
+										<li><a href="#">Hockey</a></li>
+										<li><a href="#">Soccer</a></li>
+									</ul>
+                  
+                  -->
+                  
+                  					<ul class="sm-submenu" data-sm-size="200">
+								
+									<li><a><i class="far fa-image"></i><i class="sm-caret fas fa-angle-right"></i>Birds</a>
+										<ul data-sm-size="200">
+											<li><a href="#">Eagles</a></li>
+											<li><a href="#">Pelicans</a></li>
+											<li><a href="#">Storks</a></li>
+										</ul>
+									</li>
+										
+									<li><a><i class="fas fa-plane"></i><i class="sm-caret fas fa-angle-right"></i>Aircraft</a>
+										<ul data-sm-size="200">
+											<li><a href="#">Planes</a></li>
+											<li><a href="#">Helicopters</a></li>
+											<li><a href="#">Air Balloon</a></li>
+											<li><a href="#">Rotorcraft</a></li>
+										</ul>
+									</li>
+									
+									<li><a><i class="far fa-star"></i><i class="sm-caret fas fa-angle-right"></i>Super Heroes</a>
+										<ul data-sm-size="200">
+											<li><a href="#">Ironman</a></li>
+											<li><a href="#">Superman</a></li>
+											<li><a href="#">Batman</a></li>
+										</ul>
+									</li>
+									
+									<li><a><i class="fas fa-paper-plane"></i><i class="sm-caret fas fa-angle-right"></i>Dirigibles</a>
+										<ul data-sm-size="200">
+											<li><a href="#">Zeppelins</a></li>
+											<li><a href="#">Blimps</a></li>
+										</ul>
+									</li>
+															
+								</ul>
+								</div>
+						<!--		
+								<div class="sm-col c-2">
+									<p><span class="sm-title">Descriptions</span></p>
+									<ul class="sm-submenu">
+										<li>
+											<a href="#">
+												<span>Suicide Squad</span>
+												<span class="sm-submenu-description">David Ayer</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span>The Jungle Book</span>
+												<span class="sm-submenu-description">Jon Favreau</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span>Doctor Strange</span>
+												<span class="sm-submenu-description">Scott Derrickson</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span>La La Land</span>
+												<span class="sm-submenu-description">Damien Chazelle</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								
+								<div class="sm-col c-3">
+									<p><span class="sm-title">Images + Descriptions</span></p>
+									<ul class="sm-submenu">
+										<li>
+											<a href="#" class="sm-submenu-with-image">
+												<img src="images/chart.png" width="40" height="40" alt="" />
+												<span class="sm-submenu-title">Line Chart</span>
+												<span class="sm-submenu-description">Mauris vel tempus eros</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="sm-submenu-with-image">
+												<img src="images/documents.png" width="40" height="40" alt="" />
+												<span class="sm-submenu-title">Documents</span>
+												<span class="sm-submenu-description">Quisque scelerisque dui</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="sm-submenu-with-image">
+												<img src="images/office.png" width="40" height="40" alt="" />
+												<span class="sm-submenu-title">Office Building</span>
+												<span class="sm-submenu-description">Etiam velit libero luctus</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								
+								<div class="sm-col c-2">
+									<p><span class="sm-title">Icons</span></p>
+									<ul class="sm-submenu">
+										<li>
+											<a href="#"><i class="sm-icon fas fa-flask"></i> Flask</a>
+										</li>
+										<li>
+											<a href="#"><i class="sm-icon fas fa-paper-plane"></i> Plane</a>
+										</li>
+										<li>
+											<a href="#"><i class="sm-icon fas fa-desktop"></i> Desktop</a>
+										</li>
+										<li>
+											<a href="#"><i class="sm-icon fas fa-briefcase"></i> Briefcase</a>
+										</li>
+									</ul>
+								</div>
+							-->	
+								<div class="sm-col c-4">
+									<p><span class="sm-title">Custom</span></p>
+									<div class="sm-description">
+										This column can contain whatever you like! Add text, images or HTML.
+									</div>
+								</div>	
+															
+							</div>
+						
+						</div>
+						
+					</li>
+					<!-- Mega Menu / End -->
+					
+					<!-- Grid / Start -->
+					<li class="sm-content-full sm-grid">
+						<a>Grid<i class="sm-caret fas fa-angle-down"></i></a>
+						
+						<div>
+							
+							<div class="sm-row">
+								<div class="sm-col c-1"><div class="sm-grid-wrapper">
+									<center>One</center>
+								</div></div>
+								<div class="sm-col c-11"><div class="sm-grid-wrapper">
+									<center>Eleven</center>
+								</div></div>
+							</div>
+							
+							<div class="sm-row">
+								<div class="sm-col c-10"><div class="sm-grid-wrapper">
+									<center>Ten</center>
+								</div></div>
+								<div class="sm-col c-2"><div class="sm-grid-wrapper">
+									<center>Two</center>
+								</div></div>
+							</div>
+							
+							<div class="sm-row">
+								<div class="sm-col c-3"><div class="sm-grid-wrapper">
+									<center>Three</center>
+								</div></div>
+								<div class="sm-col c-9"><div class="sm-grid-wrapper">
+									<center>Nine</center>
+								</div></div>
+							</div>
+							
+							<div class="sm-row">
+								<div class="sm-col c-8"><div class="sm-grid-wrapper">
+									<center>Eight</center>
+								</div></div>
+								<div class="sm-col c-4"><div class="sm-grid-wrapper">
+									<center>Four</center>
+								</div></div>
+							</div>
+							
+							<div class="sm-row">
+								<div class="sm-col c-5"><div class="sm-grid-wrapper">
+									<center>Five</center>
+								</div></div>
+								<div class="sm-col c-7"><div class="sm-grid-wrapper">
+									<center>Seven</center>
+								</div></div>
+							</div>
+							
+							<div class="sm-row">
+								<div class="sm-col c-1"><div class="sm-grid-wrapper">
+									<center>One</center>
+								</div></div>
+								<div class="sm-col c-1"><div class="sm-grid-wrapper">
+									<center>One</center>
+								</div></div>
+								<div class="sm-col c-1"><div class="sm-grid-wrapper">
+									<center>One</center>
+								</div></div>
+								<div class="sm-col c-1"><div class="sm-grid-wrapper">
+									<center>One</center>
+								</div></div>
+								<div class="sm-col c-1"><div class="sm-grid-wrapper">
+									<center>One</center>
+								</div></div>
+								<div class="sm-col c-1"><div class="sm-grid-wrapper">
+									<center>One</center>
+								</div></div>
+								<div class="sm-col c-1"><div class="sm-grid-wrapper">
+									<center>One</center>
+								</div></div>
+								<div class="sm-col c-1"><div class="sm-grid-wrapper">
+									<center>One</center>
+								</div></div>
+								<div class="sm-col c-1"><div class="sm-grid-wrapper">
+									<center>One</center>
+								</div></div>
+								<div class="sm-col c-1"><div class="sm-grid-wrapper">
+									<center>One</center>
+								</div></div>
+								<div class="sm-col c-1"><div class="sm-grid-wrapper">
+									<center>One</center>
+								</div></div>
+								<div class="sm-col c-1"><div class="sm-grid-wrapper">
+									<center>One</center>
+								</div></div>
+							</div>
+							
+							<div class="sm-row">
+								<div class="sm-col c-2"><div class="sm-grid-wrapper">
+									<center>Two</center>
+								</div></div>
+								<div class="sm-col c-2"><div class="sm-grid-wrapper">
+									<center>Two</center>
+								</div></div>
+								<div class="sm-col c-2"><div class="sm-grid-wrapper">
+									<center>Two</center>
+								</div></div>
+								<div class="sm-col c-2"><div class="sm-grid-wrapper">
+									<center>Two</center>
+								</div></div>
+								<div class="sm-col c-2"><div class="sm-grid-wrapper">
+									<center>Two</center>
+								</div></div>
+								<div class="sm-col c-2"><div class="sm-grid-wrapper">
+									<center>Two</center>
+								</div></div>
+							</div>
+							
+							<div class="sm-row">
+								<div class="sm-col c-4"><div class="sm-grid-wrapper">
+									<center>Four</center>
+								</div></div>
+								<div class="sm-col c-4"><div class="sm-grid-wrapper">
+									<center>Four</center>
+								</div></div>
+								<div class="sm-col c-4"><div class="sm-grid-wrapper">
+									<center>Four</center>
+								</div></div>
+							</div>
+							
+							<div class="sm-row">
+								<div class="sm-col c-2"><div class="sm-grid-wrapper">
+									<center>Two</center>
+								</div></div>
+								<div class="sm-col c-7"><div class="sm-grid-wrapper">
+									<center>Seven</center>
+								</div></div>
+								<div class="sm-col c-3"><div class="sm-grid-wrapper">
+									<center>Three</center>
+								</div></div>
+							</div>
+							
+							<div class="sm-row">
+								<div class="sm-col c-4"><div class="sm-grid-wrapper">
+									<center>Four</center>
+								</div></div>
+								<div class="sm-col c-1"><div class="sm-grid-wrapper">
+									<center>One</center>
+								</div></div>
+								<div class="sm-col c-5"><div class="sm-grid-wrapper">
+									<center>Five</center>
+								</div></div>
+								<div class="sm-col c-2"><div class="sm-grid-wrapper">
+									<center>Two</center>
+								</div></div>
+							</div>
+							
+						</div>
+						
+					</li>
+					<!-- Grid / End -->
+					
+					<!-- Gallery / Start -->
+					<li class="sm-content-full sm-grid">
+						<a href="#">Gallery<i class="sm-caret fas fa-angle-down"></i></a>
+						
+						<div>
+						
+							<div class="sm-row">							
+								
+								<div class="sm-col c-4">
+									<span class="sm-title">Chicago Tower Skydeck</span>
+									<a href="#"><img class="sm-image" src="images/chicago.jpg" alt="" /></a>
+									<p>Duis vel turpis nibh. Nulla nec augue quis lacus luctus varius a sed est. Sed sed augue commodo.</p>
+								</div>								
+								
+								<div class="sm-col c-4">
+									<span class="sm-title">New York from Rockefeller</span>
+									<a href="#"><img class="sm-image" src="images/new_york.jpg" alt="" /></a>
+									<p>Nunc tincidunt tempus est. Morbi iaculis, ex a lacinia sagittis, magna ante dictum purus.</p>
+								</div>		
+														
+								<div class="sm-col c-4">
+									<span class="sm-title">San Francisco on Evening</span>
+									<a href="#"><img class="sm-image" src="images/san_francisco.jpg" alt="" /></a>
+									<p>Vestibulum maximus, lectus sit amet dapibus interdum, mollis elit, quis tincidunt enim leo ut metus.</p>
+								</div>	
+														
+							</div>
+						
+						</div>
+						
+					</li>
+					<!-- Gallery / End -->
+					
+					<!-- Contact / Start -->
+					<li class="sm-content-full sm-grid">
+						<a href="#">Contact<i class="sm-caret fas fa-angle-down"></i></a>
+						
+						<div class="sm-no-space">
+							
+							<div class="sm-row">
+								<div class="sm-col c-5 sm-no-space">
+									<div class="sm-map-canvas" data-lat="37.800976" data-lng="-122.428502" data-address="1650 Lombard Street, San Francisco, CA 94123‎" data-zoom="12"></div>
+								</div>
+								
+								<div class="sm-col c-7 sm-space-20">
+									<h4>Contact Form</h4>
+									<p>Add custom content to your menu to completely customize its contents.</p>
+									
+									<form action="" class="sm-contact-form">
+										<p>
+											<input type="text" name="your-name" size="40" placeholder="Name" />
+										</p>
+										<p>
+											<input type="email" name="your-email" size="40" placeholder="E-mail Address" />
+										</p>
+										<p>
+											<textarea name="your-message" cols="40" rows="10" placeholder="Message"></textarea>
+										</p>
+										<p>
+											<input type="submit" value="Send" /><br>
+										</p>
+									</form>
+								</div>
+							</div>
+							
+						</div>
+						
+					</li>
+					<!-- Contact / End -->
+					
+					<!-- Search -->
+					<li class="sm-search sm-right-item">
+						<form action="">
+							<input id="search-txt" name="search" type="search">
+							<label for="search-txt" class="fas fa-search"></label>
+						</form>
+					</li>				
+					
+					<!-- Social -->
+					<li class="sm-right-item sm-social googleplus">
+						<a href="https://plus.google.com/"><i class="sm-single-icon fab fa-google-plus-g"></i></a>
+					</li>					
+					
+					<li class="sm-right-item sm-social facebook">
+						<a href="https://www.facebook.com/"><i class="sm-single-icon fab fa-facebook-f"></i></a>
+					</li>
+					
+					<li class="sm-right-item sm-social twitter">
+						<a href="https://twitter.com/AthenaStudio87"><i class="sm-single-icon fab fa-twitter"></i></a>
+					</li>
+					
+				</ul>
+				<!--
+				#########################################################
+					- SmartMenu - Responsive jQuery Mega Menu / End -
+				#########################################################
+				-->				
+				
+			</div>
+		</header>
+		
+		<!-- Page body -->
+		<div class="page-body">
+		
+			<!-- Settings -->
+			<section class="settings">
+			
+				<div class="section-inner">			
+					<div class="wrapper clearfix">						
+						
+						<p><strong>Skins</strong></p>
+					
+						<div id="demo-skins">
+						
+							<!-- Aqua -->
+							<div class="demo-skin-holder clearfix">
+								<a class="demo-op demo-skin selected" data-skin="aqua">
+									<span class="demo-skin-colors">
+										<span class="demo-skin-color" style="background-color:#22cfbb"></span>
+										<span class="demo-skin-color" style="background-color:#efefef"></span>
+									</span>
+									<b>Aqua</b>
+								</a>
+								
+								<a class="demo-op demo-skin" data-skin="aqua_bar">
+									<span class="demo-skin-colors">
+										<span class="demo-skin-color" style="background-color:#0dbaa6"></span>
+										<span class="demo-skin-color" style="background-color:#efefef"></span>
+									</span>
+									<b>Aqua Bar</b>
+								</a>
+								
+								<a class="demo-op demo-skin" data-skin="aqua_dark">
+									<span class="demo-skin-colors">
+										<span class="demo-skin-color" style="background-color:#22cfbb"></span>
+										<span class="demo-skin-color" style="background-color:#555"></span>
+									</span>
+									<b>Aqua Dark</b>
+								</a>
+								
+								<a class="demo-op demo-skin" data-skin="aqua_bar_dark">
+									<span class="demo-skin-colors">
+										<span class="demo-skin-color" style="background-color:#0dbaa6"></span>
+										<span class="demo-skin-color" style="background-color:#555"></span>
+									</span>
+									<b>Aqua Bar Dark</b>
+								</a>
+							</div>
+							
+							<!-- Orange -->
+							<div class="demo-skin-holder clearfix">
+								<a class="demo-op demo-skin" data-skin="orange">
+									<span class="demo-skin-colors">
+										<span class="demo-skin-color" style="background-color:#ff6347"></span>
+										<span class="demo-skin-color" style="background-color:#efefef"></span>
+									</span>
+									<b>Orange</b>
+								</a>
+								
+								<a class="demo-op demo-skin" data-skin="orange_bar">
+									<span class="demo-skin-colors">
+										<span class="demo-skin-color" style="background-color:#900"></span>
+										<span class="demo-skin-color" style="background-color:#efefef"></span>
+									</span>
+									<b>Orange Bar</b>
+								</a>
+								
+								<a class="demo-op demo-skin" data-skin="orange_dark">
+									<span class="demo-skin-colors">
+										<span class="demo-skin-color" style="background-color:#ff6347"></span>
+										<span class="demo-skin-color" style="background-color:#555"></span>
+									</span>
+									<b>Orange Dark</b>
+								</a>
+								
+								<a class="demo-op demo-skin" data-skin="orange_bar_dark">
+									<span class="demo-skin-colors">
+										<span class="demo-skin-color" style="background-color:#900"></span>
+										<span class="demo-skin-color" style="background-color:#555"></span>
+									</span>
+									<b>Orange Bar Dark</b>
+								</a>
+							</div>
+							
+							<!-- Green -->
+							<div class="demo-skin-holder clearfix">
+								<a class="demo-op demo-skin" data-skin="green">
+									<span class="demo-skin-colors">
+										<span class="demo-skin-color" style="background-color:#65ba1e"></span>
+										<span class="demo-skin-color" style="background-color:#efefef"></span>
+									</span>
+									<b>Green</b>
+								</a>
+								
+								<a class="demo-op demo-skin" data-skin="green_bar">
+									<span class="demo-skin-colors">
+										<span class="demo-skin-color" style="background-color:#4ca502"></span>
+										<span class="demo-skin-color" style="background-color:#efefef"></span>
+									</span>
+									<b>Green Bar</b>
+								</a>
+								
+								<a class="demo-op demo-skin" data-skin="green_dark">
+									<span class="demo-skin-colors">
+										<span class="demo-skin-color" style="background-color:#65ba1e"></span>
+										<span class="demo-skin-color" style="background-color:#555"></span>
+									</span>
+									<b>Green Dark</b>
+								</a>
+								
+								<a class="demo-op demo-skin" data-skin="green_bar_dark">
+									<span class="demo-skin-colors">
+										<span class="demo-skin-color" style="background-color:#4ca502"></span>
+										<span class="demo-skin-color" style="background-color:#555"></span>
+									</span>
+									<b>Green Bar Dark</b>
+								</a>
+							</div>
+							
+							<!-- Blue -->
+							<div class="demo-skin-holder clearfix">
+								<a class="demo-op demo-skin" data-skin="blue">
+									<span class="demo-skin-colors">
+										<span class="demo-skin-color" style="background-color:#4a79f3"></span>
+										<span class="demo-skin-color" style="background-color:#efefef"></span>
+									</span>
+									<b>Blue</b>
+								</a>
+								
+								<a class="demo-op demo-skin" data-skin="blue_bar">
+									<span class="demo-skin-colors">
+										<span class="demo-skin-color" style="background-color:#405ca6"></span>
+										<span class="demo-skin-color" style="background-color:#efefef"></span>
+									</span>
+									<b>Blue Bar</b>
+								</a>
+								
+								<a class="demo-op demo-skin" data-skin="blue_dark">
+									<span class="demo-skin-colors">
+										<span class="demo-skin-color" style="background-color:#4a79f3"></span>
+										<span class="demo-skin-color" style="background-color:#555"></span>
+									</span>
+									<b>Blue Dark</b>
+								</a>
+								
+								<a class="demo-op demo-skin" data-skin="blue_bar_dark">
+									<span class="demo-skin-colors">
+										<span class="demo-skin-color" style="background-color:#405ca6"></span>
+										<span class="demo-skin-color" style="background-color:#555"></span>
+									</span>
+									<b>Blue Bar Dark</b>
+								</a>
+							</div>
+							
+							<!-- Red -->
+							<div class="demo-skin-holder clearfix">
+								<a class="demo-op demo-skin" data-skin="red">
+									<span class="demo-skin-colors">
+										<span class="demo-skin-color" style="background-color:#c00"></span>
+										<span class="demo-skin-color" style="background-color:#efefef"></span>
+									</span>
+									<b>Red</b>
+								</a>
+								
+								<a class="demo-op demo-skin" data-skin="red_bar">
+									<span class="demo-skin-colors">
+										<span class="demo-skin-color" style="background-color:#900"></span>
+										<span class="demo-skin-color" style="background-color:#efefef"></span>
+									</span>
+									<b>Red Bar</b>
+								</a>
+								
+								<a class="demo-op demo-skin" data-skin="red_dark">
+									<span class="demo-skin-colors">
+										<span class="demo-skin-color" style="background-color:#c00"></span>
+										<span class="demo-skin-color" style="background-color:#555"></span>
+									</span>
+									<b>Red Dark</b>
+								</a>
+								
+								<a class="demo-op demo-skin" data-skin="red_bar_dark">
+									<span class="demo-skin-colors">
+										<span class="demo-skin-color" style="background-color:#900"></span>
+										<span class="demo-skin-color" style="background-color:#555"></span>
+									</span>
+									<b>Red Bar Dark</b>
+								</a>
+							</div>
+							
+							<!-- Purple -->
+							<div class="demo-skin-holder clearfix">
+								<a class="demo-op demo-skin" data-skin="purple">
+									<span class="demo-skin-colors">
+										<span class="demo-skin-color" style="background-color:#9d66f4"></span>
+										<span class="demo-skin-color" style="background-color:#efefef"></span>
+									</span>
+									<b>Purple</b>
+								</a>
+								
+								<a class="demo-op demo-skin" data-skin="purple_bar">
+									<span class="demo-skin-colors">
+										<span class="demo-skin-color" style="background-color:#683caf"></span>
+										<span class="demo-skin-color" style="background-color:#efefef"></span>
+									</span>
+									<b>Purple Bar</b>
+								</a>
+								
+								<a class="demo-op demo-skin" data-skin="purple_dark">
+									<span class="demo-skin-colors">
+										<span class="demo-skin-color" style="background-color:#9d66f4"></span>
+										<span class="demo-skin-color" style="background-color:#555"></span>
+									</span>
+									<b>Purple Dark</b>
+								</a>
+								
+								<a class="demo-op demo-skin" data-skin="purple_bar_dark">
+									<span class="demo-skin-colors">
+										<span class="demo-skin-color" style="background-color:#683caf"></span>
+										<span class="demo-skin-color" style="background-color:#555"></span>
+									</span>
+									<b>Purple Bar Dark</b>
+								</a>
+							</div>
+							
+							<!-- Pink -->
+							<div class="demo-skin-holder clearfix">
+								<a class="demo-op demo-skin" data-skin="pink">
+									<span class="demo-skin-colors">
+										<span class="demo-skin-color" style="background-color:#c70c70"></span>
+										<span class="demo-skin-color" style="background-color:#efefef"></span>
+									</span>
+									<b>Pink</b>
+								</a>
+								
+								<a class="demo-op demo-skin" data-skin="pink_bar">
+									<span class="demo-skin-colors">
+										<span class="demo-skin-color" style="background-color:#770743"></span>
+										<span class="demo-skin-color" style="background-color:#efefef"></span>
+									</span>
+									<b>Pink Bar</b>
+								</a>
+								
+								<a class="demo-op demo-skin" data-skin="pink_dark">
+									<span class="demo-skin-colors">
+										<span class="demo-skin-color" style="background-color:#c70c70"></span>
+										<span class="demo-skin-color" style="background-color:#555"></span>
+									</span>
+									<b>Pink Dark</b>
+								</a>
+								
+								<a class="demo-op demo-skin" data-skin="pink_bar_dark">
+									<span class="demo-skin-colors">
+										<span class="demo-skin-color" style="background-color:#770743"></span>
+										<span class="demo-skin-color" style="background-color:#555"></span>
+									</span>
+									<b>Pink Bar Dark</b>
+								</a>
+							</div>
+							
+						</div>
+						
+						<div id="demo-config">
+						
+							<div class="demo-skin-holder clearfix">
+							
+								<!-- Effect -->
+								<div class="demo-skin">
+									<p><strong>Effect</strong></p>		
+									
+									<div class="selecter">
+										<div class="dropdown">
+											<div class="dropcontent">Select Effect</div>
+											<div class="dropbutton"></div>
+										</div>
+										<select name="effect">
+											<option value="fade" selected>fade</option>
+											<option value="slide-top">&uarr; slide-top</option>
+											<option value="slide-bottom">&darr; slide-bottom</option>
+											<option value="slide-left">&larr; slide-left</option>
+											<option value="slide-right">&rarr; slide-right</option>			
+										</select>
+									</div>
+								</div>
+								
+								<!-- Easing -->
+								<div class="demo-skin">									
+									<p><strong>Easing</strong></p>
+									
+									<div class="selecter">
+										<div class="dropdown">
+											<div class="dropcontent">Select Easing</div>
+											<div class="dropbutton"></div>
+										</div>
+										<select name="easing">
+											<optgroup label="defaults">
+												<option value="linear">linear</option>
+												<option value="ease" selected>ease</option>
+												<option value="ease-in">ease-in</option>
+												<option value="ease-out">ease-out</option>
+												<option value="ease-in-out">ease-in-out</option>
+											</optgroup>
+											<optgroup label="Penner Equations (approximated)">
+												<option value="cubic-bezier(0.550, 0.085, 0.680, 0.530)">easeInQuad</option>
+												<option value="cubic-bezier(0.550, 0.055, 0.675, 0.190)">easeInCubic</option>
+												<option value="cubic-bezier(0.895, 0.030, 0.685, 0.220)">easeInQuart</option>
+												<option value="cubic-bezier(0.755, 0.050, 0.855, 0.060)">easeInQuint</option>
+												<option value="cubic-bezier(0.470, 0.000, 0.745, 0.715)">easeInSine</option>
+												<option value="cubic-bezier(0.950, 0.050, 0.795, 0.035)">easeInExpo</option>
+												<option value="cubic-bezier(0.600, 0.040, 0.980, 0.335)">easeInCirc</option>
+												<option value="cubic-bezier(0.600, -0.280, 0.735, 0.045)">easeInBack</option>
+									
+												<option value="cubic-bezier(0.250, 0.460, 0.450, 0.940)">easeOutQuad</option>
+												<option value="cubic-bezier(0.215, 0.610, 0.355, 1.000)">easeOutCubic</option>
+												<option value="cubic-bezier(0.165, 0.840, 0.440, 1.000)">easeOutQuart</option>
+												<option value="cubic-bezier(0.230, 1.000, 0.320, 1.000)">easeOutQuint</option>
+												<option value="cubic-bezier(0.390, 0.575, 0.565, 1.000)">easeOutSine</option>
+												<option value="cubic-bezier(0.190, 1.000, 0.220, 1.000)">easeOutExpo</option>
+												<option value="cubic-bezier(0.075, 0.820, 0.165, 1.000)">easeOutCirc</option>
+												<option value="cubic-bezier(0.175, 0.885, 0.320, 1.275)">easeOutBack</option>
+									
+												<option value="cubic-bezier(0.455, 0.030, 0.515, 0.955)">easeInOutQuad</option>
+												<option value="cubic-bezier(0.645, 0.045, 0.355, 1.000)">easeInOutCubic</option>
+												<option value="cubic-bezier(0.770, 0.000, 0.175, 1.000)">easeInOutQuart</option>
+												<option value="cubic-bezier(0.860, 0.000, 0.070, 1.000)">easeInOutQuint</option>
+												<option value="cubic-bezier(0.445, 0.050, 0.550, 0.950)">easeInOutSine</option>
+												<option value="cubic-bezier(1.000, 0.000, 0.000, 1.000)">easeInOutExpo</option>
+												<option value="cubic-bezier(0.785, 0.135, 0.150, 0.860)">easeInOutCirc</option>
+												<option value="cubic-bezier(0.680, -0.550, 0.265, 1.550)">easeInOutBack</option>
+											</optgroup>	
+										</select>
+									</div>
+								</div>
+								
+								<!-- Responsive -->
+								<div class="demo-skin">
+									<p><strong>Responsive Mode</strong></p>
+								
+									<div class="selecter">
+										<div class="dropdown">
+											<div class="dropcontent">Select Responsive Mode</div>
+											<div class="dropbutton"></div>
+										</div>
+										<select name="responsive">
+											<option value="">none</option>
+											<option value="switch">switch</option>
+											<option value="stack">stack</option>
+											<option value="switch-margin" selected>switch-margin</option>
+											<option value="stack-margin">stack-margin</option>
+											<option value="simple">simple</option>
+										</select>
+									</div>
+								</div>
+								
+								<!-- Show On -->
+								<div class="demo-skin">
+									<p><strong>Show On</strong></p>
+								
+									<div class="selecter">
+										<div class="dropdown">
+											<div class="dropcontent">Select Show Event</div>
+											<div class="dropbutton"></div>
+										</div>
+										<select name="showOn">
+											<option value="click">click</option>
+											<option value="hover" selected>hover</option>
+											<option value="toggle">toggle</option>
+										</select>
+									</div>
+								</div>
+								
+							</div>
+						
+						</div>
+						
+					</div>				
+				</div>	
+					
+			</section>
+		
+			<!-- Content -->
+			<section class="row">
+			
+				<div class="section-inner">				
+					<div class="wrapper wrapper-center wrapper-nav-style clearfix">
+					
+						<h2 class="top-h2"><strong>Navigate</strong> in Style</h2>
+						<i class="nav-style fas fa-angle-double-down"></i>
+					
+					</div>					
+				</div>
+				
+				<div class="section-inner">	
+					<div class="wrapper clearfix">
+					
+						<div class="one-half-first">
+							<h2>Create beautiful menu layouts</h2>
+							<p><strong>Columns, rows, images, icons, maps, forms &amp; more.</strong></p>
+							<p>With a full grid system built in and individual layout controls for each menu item, it's easy to build gorgeous mega menu layouts.</p>
+						</div>
+						
+						<div class="one-half"><img class="img-shadow" src="images/preview/mega-menu.png" alt="Beautiful Menu Layouts with SmartMenu" /></div>		
+					
+					</div>				
+				</div>
+				
+			</section>
+			
+			<section class="row row-darker">
+				<div class="section-inner flush-bottom">	
+					<div class="wrapper clearfix">
+					
+						<h2>Easily Add Images</h2>
+						
+						<p><strong>Catch your customers' attention</strong>. Provide visual references to help your customers quickly navigate your site.</p>
+						
+						<img alt="Images/Video in Mega Menu" src="images/preview/images.png" />
+	
+					</div>
+				
+				</div>
+			</section>
+			
+			<section class="row">
+			
+				<div class="section-inner">	
+					<div class="wrapper clearfix">
+					
+						<div class="one-half-first"><img class="img-shadow" src="images/preview/contact.png" alt="Custom Content in Mega Menu" /></div>		
+					
+						<div class="one-half">
+							<h2>Custom Content &amp; Forms</h2>
+							<p><strong>Maps, contact forms &amp; more.</strong></p>
+							<p>SmartMenu lets you add any HTML, forms, Google Maps or widget you like to the menu.</p>
+						</div>			
+						
+					</div>				
+				</div>
+				
+			</section>
+			
+			<!-- Message -->
+			<section class="row row-darker message">
+			
+				<div class="section-inner">			
+					<div class="wrapper clearfix">
+					
+						<div class="left-float">
+							<p>Jumpstart your site navigation today!</p>
+						</div>
+						
+						<div class="right-float">
+							<span class="btn">
+								<a href="https://codecanyon.net/item/smartmenu-responsive-jquery-mega-menu/19501519?ref=AthenaStudio" target="_blank"><i class="fas fa-chevron-circle-right"></i> Get SmartMenu Now</a>
+							</span>
+						</div>
+						
+					</div>				
+				</div>	
+					
+			</section>
+            
+            <!-- Footer -->
+			<section class="footer big-padding">
+			
+				<div class="section-inner">					
+					<div class="wrapper clearfix">
+                
+						<span class="copyright">Copyright © <a href="https://themeforest.net/user/athenastudio" target="_blank">AthenaStudio</a><br>
+							<span class="social">
+								<a href="https://twitter.com/athenastudio87" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+								<a href="https://athenastudio87.deviantart.com/" title="DeviantArt" target="_blank"><i class="fab fa-deviantart"></i></a>
+								<a href="https://www.behance.net/athenastudio" title="Behance" target="_blank"><i class="fab fa-behance"></i></a>
+								<a href="https://dribbble.com/AthenaStudio" title="Dribbble" target="_blank"><i class="fab fa-dribbble"></i></a>					
+								<a href="https://themeforest.net/feeds/users/AthenaStudio.atom" title="RSS" target="_blank"><i class="fas fa-rss"></i></a>
+							</span>
+						</span>
+						
+					</div>				
+				</div>
+				
+			</section>
+		
+		</div>
+		
+	</body>
+	
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		
+		<title>SmartMenu Responsive jQuery Mega Menu - Help Documentation</title>
+		
+		<!-- CSS style -->
+		<link rel="shortcut icon" href="assets/images/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="assets/css/global.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/fontello.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="assets/js/google-code-prettify/prettify.css" />
+		
+		<!-- Google web fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800" rel="stylesheet" type="text/css">
+		
+		<!-- jQuery -->
+		<script type="text/javascript" src="assets/js/jquery.js"></script>
+		<script type="text/javascript" src="assets/js/globals.js"></script>
+		<script type="text/javascript" src="assets/js/google-code-prettify/prettify.js"></script>
+	</head>
+	<body>
+		
+		<!-- Header -->
+		<header>
+			<div class="container">
+				<div class="logo">SmartMenu Responsive jQuery Mega Menu</div>
+				<div class="slogan">Responsive jQuery mega dropdown menu</div>
+			</div>
+		</header>
+		
+		<!-- Container -->
+		<div class="container">	
+		
+			<div class="avatar">
+				<a href="https://themeforest.net/user/AthenaStudio"><img src="assets/images/logo.png" width="350" height="50" alt="AthenaStudio" title="AthenaStudio" /></a>
+			</div>
+		
+			<div class="author">
+				Created: <strong>22/02/2017</strong><br />
+				Last Update: <strong>12/07/2018</strong><br />
+				By: <strong><a href="https://themeforest.net/user/AthenaStudio/portfolio">AthenaStudio</a></strong><br />
+				Profile: <strong><a href="https://themeforest.net/user/AthenaStudio">themeforest.net/user/AthenaStudio</a></strong><br />
+				E-mail: <strong><a href="mailto:athenastudio87@hotmail.com">athenastudio87@hotmail.com</a></strong><br />
+				Twitter: <strong><a href="https://twitter.com/AthenaStudio87">twitter.com/AthenaStudio87</a></strong>
+			</div>
+			<p>&nbsp;</p>
+			
+			<h2 class="alt">Table of Contents</h2>
+			<ol class="alpha">
+				<li><a href="#directories">Directories</a></li>
+				<li><a href="#font">Font Used</a></li>
+				<li><a href="#installation">Installation</a></li>
+				<li><a href="#css">CSS Classes</a></li>	
+				<li><a href="#parameter">Plugin Parameters</a></li>	
+			</ol>
+			
+			<hr />
+			<h3 id="directories">A) Directories</h3>
+			<p>
+				<b>source</b> - Original source files other files are part of the source, you do not need to upload any of these to your server. Use these to change the code or style.
+			</p>
+			<p>
+				<b>deploy</b> – Published files  for adding item to the site.
+				These are the files you need to <span class="note">upload to your server</span>.
+			</p>
+			<p><b>help</b> – Help file (HTML)</p>
+			
+			<hr />
+			<h3 id="font">B) Font Used</h3>
+			<p>
+				<strong>Open Sans</strong> - <a href="https://fonts.google.com/specimen/Open+Sans" target="_blank">https://fonts.google.com/specimen/Open+Sans</a><br />
+			</p>
+			<p>You can change font from CSS file.</p>
+			
+			<hr />
+			<h3 id="installation">C) Installation</h3>
+			<p>Installing the menu requires the following steps.</p>
+			<ol>
+				<li>Including the css files.</li>
+				<li>Including the javascript files.</li>
+				<li>Specifying the html tags of the menu within your page.</li>
+				<li>Instantiating a javascript function call with any optional parameters.</li>
+			</ol>	
+			<p>Below describes these steps in more detail.</p>
+			<p>In step 1, to include css files, simply specify the following lines of code within your <em>&lt;head&gt;</em> tag:</p>
+			<pre class="prettyprint lang-html linenums">
+&lt;link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'&gt;
+&lt;link rel="stylesheet" type="text/css" href="css/fontawesome/css/font-awesome.min.css" /&gt;
+&lt;link rel="stylesheet" type="text/css" href="smartmenu/smartmenu.css" /&gt;
+&lt;link rel="stylesheet" type="text/css" href="smartmenu/colors/orange.css" /&gt;
+</pre>
+
+			<p>You can change menu theme by changing <strong>orange.css</strong> with another css file located in <strong>smartmenu/colors/</strong> folder.</p>
+			<p>You can remove <strong>font-awesome.min.css</strong> if you won't use <strong>Font Awesome</strong> icons.</p>
+
+			<p>You can use another Google web font or fully remove it if you want.</p>
+			<p>In step 2, you will need to include the jquery's library files, other plugins used and the menu's file <strong>jquery.smartmenu.js</strong> which is located in the <strong>js</strong> directory. The code below shows the include in a html page:</p>
+			<pre class="prettyprint lang-html linenums">&lt;script type="text/javascript" src="js/jquery.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=<strong>[API_KEY]</strong>"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="smartmenu/jquery.smartmenu.js"&gt;&lt;/script&gt;
+</pre>
+			<p>You need to use <strong>Google Maps API</strong> when you add a map to the menu.</p>
+			
+			<p><span class="note">Note:</span> The css, js files are the compressed production version of the file. If you intend to modify the menu's source code, you will need to look at files in <strong>source</strong> folder and it is recommended that you minify the modified file afterwards.</p>
+			
+			<p>In step 3, to specify the tags of the menu itself, refer to the example in the <strong>index.html</strong> file. In that file, you'll see a block of tag starting and ending with:</p>
+			<pre class="prettyprint lang-html linenums">
+&lt;ul class="smartmenu"&gt;
+  &lt;!-- all the tags in between, see index.html for the complete code --&gt;
+&lt;/ul&gt;
+</pre>
+			
+			<p>Finally in step 4, you will need to instantiate a javascript function call to get the menu initialized. The example code looks like this below:</p>
+			<pre class="prettyprint lang-html lang-js linenums">
+&lt;script type="text/javascript"&gt;
+  $(document).ready(function() {
+    $(".smartmenu").smartMenu();
+  });
+&lt;/script&gt;
+</pre>
+			<p>This will instantiate the menu using the default parameters.</p>
+			
+			<hr />
+			<h3 id="css">D) CSS Classes</h3>
+			<p>Each menu item has some special classes.</p>
+			
+			<p><b>Main</b></p>
+			<ul>
+				<li><strong>smartmenu</strong> - Main menu class</li>
+				<li><strong>sm-active</strong> - Active menu item</li>
+				<li><strong>sm-right-item</strong> - Right aligned item (Accept to main menu items only)</li>
+			</ul>
+			
+			<p><b>Responsive Toggle</b></p>
+			<ul>
+				<li><strong>sm-responsive-toggle</strong> - Responsive menu toggle button class</li>
+			</ul>
+			
+			<p><b>Logo</b></p>
+			<ul>
+				<li><strong>sm-logo</strong> - Main logo class</li>
+			</ul>
+			
+			<p><b>Icons</b></p>
+			<ul>
+				<li><strong>sm-caret</strong> - Dropdown caret</li>
+				<li><strong>sm-single-icon</strong> - Single icon item (Without label)</li>
+			</ul>
+			
+			<p><b>Dropdown</b></p>
+			<ul>
+				<li><strong>sm-drop-left</strong> - Left shift dropdown menu class</li>
+				<li><strong>sm-multi-column</strong> - Multicolumn dropdown</li>
+				<li><strong>sm-right-align</strong> - Right align dropdown</li>
+			</ul>
+			
+			<p><b>Content Dropdown</b></p>
+			<ul>
+				<li><strong>sm-content</strong> - Auto width content class</li>
+				<li><strong>sm-content-full</strong> - Full content class</li>
+				<li><strong>sm-right-align</strong> - Right align dropdown</li>
+			</ul>
+			
+			<p><b>Grid System</b></p>
+			<ul>
+				<li><strong>sm-row</strong> - Row</li>
+				<li><strong>sm-col</strong> - Column</li>
+				<li><strong>[c-1...c-12]</strong> - Columns classes from 1 to 12 cells</li>
+				<li><strong>sm-grid-wrapper</strong> - Grid column wrapper</li>
+			</ul>
+			
+			<p><b>Search Place</b></p>
+			<ul>
+				<li><strong>sm-search</strong> - Search form</li>
+			</ul>
+			
+			<p><b>Miscellaneous</b></p>
+			<ul>
+				<li><strong>sm-button</strong> - Styled button class</li>
+				<li><strong>sm-map-canvas</strong> - Google Maps canvas with data attributes</li>
+				<li><strong>sm-video</strong> - Wrapper for iframe (video, maps)</li>
+			</ul>
+			
+			<hr />
+			<h3 id="parameter">E) Plugin Parameters</h3>
+			<p>You can change some common attributes of the menu through the parameters of the plugin. Below is an example of the attributes being specified with corresponding values.</p> 
+			<p><span class="note">Note:</span> if you want to leave a parameter with its default value, you can omit that parameter in the javascript call.</p>
+			<pre class="prettyprint lang-html lang-js linenums">
+&lt;script type="text/javascript"&gt;
+  $(document).ready(function() {
+    $(".smartmenu").smartMenu({
+      position:"",          //top, bottom, left, right
+      fixed:false,
+      sticky:false,
+      fullWidth:true,
+      responsive:"switch",  //simple, switch[-margin], stack[-margin]
+      showOn:"hover",       //hover, click, toggle
+      effect:{
+        name:"fade",        //fade, slide[-top, -bottom, -left, -right]
+        speed:300,          //Animation speed (ms)
+        delay:0,            //Delay between animation (ms)
+        easing:"ease"       //Easing function, can use cubic-bezier()
+      }
+    });
+  });
+&lt;/script&gt;</pre>
+
+			<table>
+				<thead>
+					<tr>
+						<th style="width:20%">Attribute</th>
+						<th style="width:33%">Properties</th>
+						<th style="width:47%">Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th><strong>position</strong></th>
+						<td><b>string</b></td>
+						<td>Specifies the CSS position of the menu. Set to <strong>top</strong>, <strong>bottom</strong>, <strong>left</strong> or <strong>right</strong>.</td>
+					</tr>
+					<tr>
+						<th><strong>fixed</strong></th>
+						<td><b>boolean</b> - Default: <strong>false</strong></td>
+						<td>
+							Specifies if the menu is fixed to one of sides depending on the position value.
+							Set to <strong>true</strong> or <strong>false</strong>.
+						</td>
+					</tr>
+					<tr>
+						<th><strong>sticky</strong></th>
+						<td><b>boolean</b> - Default: <strong>false</strong></td>
+						<td>
+							Specifies if the menu sticks to one of sides depending on the position value when it reaches the edge of the window.
+							Set to <strong>true</strong> or <strong>false</strong>.
+						</td>
+					</tr>
+					<tr>
+						<th><strong>fullWidth</strong></th>
+						<td><b>boolean</b> - Default: <strong>true</strong></td>
+						<td>
+							Specifies if the menu width is auto or full width.
+							Set to <strong>true</strong> or <strong>false</strong>.
+						</td>
+					</tr>
+					<tr>
+						<th><strong>responsive</strong></th>
+						<td><b>string</b> - Default: <strong>switch</strong></td>
+						<td>Specifies the responsive view style of the menu. Set to <strong>simple</strong>, <strong>switch</strong>, <strong>stack</strong>, <strong>switch-margin</strong> or <strong>stack-margin</strong>.</td>
+					</tr>
+					<tr>
+						<th><strong>showOn</strong></th>
+						<td><b>string</b> - Default: <strong>hover</strong></td>
+						<td>Specifies the menu visibility function. Set to <strong>hover</strong>, <strong>click</strong> or <strong>toggle</strong>.</td>
+					</tr>
+					<tr>
+						<th><strong>name</strong></th>
+						<td><b>string</b> - Default: <strong>hover</strong></td>
+						<td>Specifies the menu preset show effects. Set to <strong>fade</strong>, <strong>slide-up</strong>, <strong>slide-down</strong>, <strong>slide-left</strong> or <strong>slide-right</strong>. You can set it to <strong>false</strong> to remove effect.</td>
+					</tr>
+					<tr>
+						<th><strong>speed</strong></th>
+						<td><b>number</b> - Default: <strong>300</strong></td>
+						<td>The menu effect speed in milliseconds.</td>
+					</tr>
+					<tr>
+						<th><strong>delay</strong></th>
+						<td><b>number</b> - Default: <strong>100</strong></td>
+						<td>The time delay to show/hide menu in milliseconds.</td>
+					</tr>
+					<tr>
+						<th><strong>easing</strong></th>
+						<td><b>string</b> - Default: <strong>ease</strong></td>
+						<td>Specifies the easing effect. Set to <strong>ease</strong>, <strong>ease-in</strong>, <strong>ease-out</strong>, <strong>linear</strong> or <strong>cubic-bezier</strong>. You can generate it <a href="https://matthewlein.com/ceaser/" target="_blank">here</a>.</td>
+					</tr>					
+				</tbody>
+			</table>
+						
+		</div>
+		
+		<!-- Social profiles -->
+		<footer>				
+			<div class="container social">
+				<a href="https://twitter.com/AthenaStudio87" target="_blank" title="Twitter" class="twitter"><i class="icon-twitter"></i></a> 
+				<a href="https://plus.google.com/107307301113855149802" target="_blank" title="Google+" class="googleplus"><i class="icon-gplus"></i></a> 
+				<a href="https://athenastudio87.deviantart.com/" target="_blank" title="Deviant Art" class="deviantart"><i class="icon-deviantart"></i></a> 
+				<a href="https://dribbble.com/AthenaStudio" target="_blank" title="Dribbble" class="dribbble"><i class="icon-dribbble"></i></a> 
+				<a href="https://www.flickr.com/photos/athenastudio" target="_blank" title="Flickr" class="flickr"><i class="icon-flickr"></i></a> 
+				<a href="https://www.behance.net/athenastudio" target="_blank" title="Behance" class="behance"><i class="icon-behance"></i></a> 
+				<a href="https://themeforest.net/feeds/users/AthenaStudio.atom" target="_blank" title="RSS Feed" class="rss"><i class="icon-rss"></i></a>
+			</div>
+		</footer>
+		
+		<!-- Go to top arrow -->
+		<div class="totop">
+		   <div class="gototop">
+				<div class="arrowgototop"></div>
+		   </div>
+	  	</div>
+	  
+	</body>
+</html>
